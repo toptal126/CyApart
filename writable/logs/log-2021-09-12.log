@@ -1,0 +1,453 @@
+CRITICAL - 2021-09-12 06:48:43 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 36)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(49): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(74): view('apartment/apart...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-09-12 06:49:08 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 36)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(49): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(74): view('apartment/apart...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-09-12 06:51:17 --> Undefined property: App\Controllers\Apartment::$session
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'F:\\Projects\\mob...', 67)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 06:51:37 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 36)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(49): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(79): view('apartment/apart...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-09-12 06:52:16 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 36)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(49): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(79): view('apartment/apart...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-09-12 07:33:14 --> Unsupported operand types: string + string
+#0 F:\Projects\mobasher\ci4\system\View\View.php(214): include()
+#1 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#3 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(79): view('apartment/apart...', Array)
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-12 08:06:49 --> Unsupported operand types: string + string
+#0 F:\Projects\mobasher\ci4\system\View\View.php(214): include()
+#1 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/apart...', Array, true)
+#3 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(79): view('apartment/apart...', Array)
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->apartments()
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-12 10:40:13 --> Class "App\Controllers\Imagick" not found
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 10:42:28 --> Class "App\Controllers\Imagick" not found
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 10:42:58 --> Class "Imagick" not found
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 10:45:05 --> Class "Imagick" not found
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 10:50:05 --> File not found: /path/to/image/mypic.jpg
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/path/to/image/...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('/path/to/image/...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('/path/to/image/...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:52:22 --> File not found: http://localhostpublic/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:52:35 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:52:45 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:52:54 --> File not found: /images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/images/apartme...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('/images/apartme...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('/images/apartme...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:54:23 --> File not found: /images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/images/apartme...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('/images/apartme...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('/images/apartme...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:54:29 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:54:52 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:54:59 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 10:55:11 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:00:08 --> The framework needs the following extension(s) installed and loaded: IMAGICK.
+#0 F:\Projects\mobasher\ci4\system\Images\Handlers\ImageMagickHandler.php(53): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('IMAGICK')
+#1 F:\Projects\mobasher\ci4\system\Config\Services.php(312): CodeIgniter\Images\Handlers\ImageMagickHandler->__construct(Object(Config\Images))
+#2 F:\Projects\mobasher\ci4\system\Config\BaseService.php(248): CodeIgniter\Config\Services::image('imagick', Object(Config\Images), false)
+#3 F:\Projects\mobasher\ci4\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('image', Array)
+#4 F:\Projects\mobasher\ci4\system\Config\Services.php(305): CodeIgniter\Config\BaseService::getSharedInstance('image', 'imagick', NULL)
+#5 F:\Projects\mobasher\ci4\system\Config\BaseService.php(248): CodeIgniter\Config\Services::image('imagick')
+#6 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(83): CodeIgniter\Config\BaseService::__callStatic('image', Array)
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#8 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#9 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-09-12 11:00:15 --> File not found: http://localhost/images/apartments/akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('http://localhos...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('http://localhos...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('http://localhos...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:05:21 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:05:42 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:05:56 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:06:02 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:06:08 --> File not found: akppbkogacg18xwmfl7u.png
+#0 F:\Projects\mobasher\ci4\system\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('akppbkogacg18xw...')
+#1 F:\Projects\mobasher\ci4\system\Images\Handlers\BaseHandler.php(148): CodeIgniter\Files\File->__construct('akppbkogacg18xw...', true)
+#2 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Images\Handlers\BaseHandler->withFile('akppbkogacg18xw...')
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-09-12 11:06:26 --> Unable to save the image. Please make sure the image and file directory are writable.
+#0 F:\Projects\mobasher\ci4\system\Images\Handlers\GDHandler.php(255): CodeIgniter\Images\Exceptions\ImageException::forSaveFailed()
+#1 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(86): CodeIgniter\Images\Handlers\GDHandler->save('/path/to/image/...')
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-09-12 11:07:20 --> Undefined variable $thumb
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 88)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 11:09:03 --> Array to string conversion
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'F:\\Projects\\mob...', 87)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 11:11:52 --> Undefined variable $imageInfo
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 89)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 11:12:02 --> Attempt to read property "width" on array
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 89)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 11:12:15 --> Call to a member function destroy() on bool
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 11:14:40 --> Attempt to read property "image" on array
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 84)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-09-12 11:57:27 --> Unknown column 'parking_sqm' in 'field list'
+CRITICAL - 2021-09-12 11:57:27 --> Unknown column 'parking_sqm' in 'field list'
+#0 F:\Projects\mobasher\ci4\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `ap...')
+#1 F:\Projects\mobasher\ci4\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 F:\Projects\mobasher\ci4\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 F:\Projects\mobasher\ci4\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 F:\Projects\mobasher\ci4\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\Projects\mobasher\ci4\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 F:\Projects\mobasher\ci4\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(151): CodeIgniter\Model->insert(Array)
+#8 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->save_details()
+#9 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-09-12 14:25:01 --> Too few arguments to function App\Controllers\Apartment::view_apartment(), 0 passed in F:\Projects\mobasher\ci4\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 14:26:11 --> Too few arguments to function App\Controllers\Apartment::view_apartment(), 0 passed in F:\Projects\mobasher\ci4\system\CodeIgniter.php on line 802 and exactly 1 expected
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-12 15:37:01 --> Undefined variable $availableApartments
+#0 F:\Projects\mobasher\ci4\app\Views\apartment\preview.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 105)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/previ...', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(117): view('apartment/previ...', Array)
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-12 15:37:17 --> Undefined variable $availableApartments
+#0 F:\Projects\mobasher\ci4\app\Views\apartment\preview.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 105)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/previ...', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(117): view('apartment/previ...', Array)
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-12 15:47:05 --> Undefined variable $apart_id
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 187)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('husj')
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 15:50:28 --> Undefined variable $perspective
+#0 F:\Projects\mobasher\ci4\app\Views\apartment\view_apartment.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 17)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/view_...', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(195): view('apartment/view_...', Array)
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('husj')
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-12 15:51:00 --> Undefined variable $apart
+#0 F:\Projects\mobasher\ci4\app\Views\apartment\view_apartment.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 17)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/view_...', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(196): view('apartment/view_...', Array)
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('husj')
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-12 15:51:10 --> Undefined array key "title"
+#0 F:\Projects\mobasher\ci4\app\Views\apartment\view_apartment.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\Projects\\mob...', 17)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/view_...', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(196): view('apartment/view_...', Array)
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('husj')
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-09-12 15:51:23 --> Undefined array key "title"
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\Projects\\mob...', 196)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('husj')
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 20:14:15 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 40)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(39): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/view_...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(196): view('apartment/view_...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->view_apartment('b601')
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2021-09-12 20:35:41 --> Undefined array key "max_good_sqm"
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'F:\\Projects\\mob...', 112)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 20:35:58 --> Attempt to read property "apartmentModel" on string
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 119)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-12 20:36:41 --> Call to a member function where() on null
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

@@ -1,0 +1,135 @@
+#img_preview path{
+  cursor: pointer;
+}
+#img_preview .status-0{
+	fill: #f2383866;
+}
+#img_preview .status-0:hover{
+	fill: #f2383899;
+}
+#img_preview .status-1:hover{
+	fill: #42a48799;
+}
+#img_preview .filter-accept.status-1{
+  fill: #42a48766;
+}
+#img_preview .filter-accept.status-0{
+  fill: #f2383866;
+}
+#img_preview .filter-accept.status-1:hover{
+  fill: #42a48799;
+}
+#img_preview .filter-accept.status-0:hover{
+  fill: #f2383899;
+}
+#img_preview .filter-decline{
+  fill: #80808066;
+}
+#img_preview .filter-decline:hover{
+  fill: #80808099;
+}
+.tooltip-inner{
+	padding: 0px !important;
+	background-color: #0000;
+}
+.tooltip.show{
+	opacity: 1;
+}
+.arrow::before{
+	border-right-color: white !important
+	border-left-color: white !important
+}
+.hover-popup{
+	background: #fff;
+	color: #2e363d;
+	width: 200px;
+	border-radius: 8px;
+	box-shadow: 8px 8px 16px rgb(0 0 0 / 40%);
+}
+.hover-popup-title{
+	text-align: center;
+	background: #eee;
+	color: #000;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 10px 10px 20px;
+	border-radius: 8px 8px 0 0;
+}
+.hover-popup-status-hr{
+	width: 100%;
+	height: 3px;
+}
+.hr-status-0{
+	background-color: #bb252e;
+}
+.hr-status-1{
+	background-color: #369e69;
+}
+.hover-popup-status-text{
+	color: white;
+	margin-top: -15px;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.text-status-0{
+	background-color: #bb252e;
+}
+.text-status-1{
+	background-color: #369e69;
+}
+.hover-popup-body{
+	padding: 10px 15px 20px;
+	text-align: left;
+}
+.hover-popup-image{
+	width: 100%
+}
+
+.my-card:hover{
+  box-shadow: 8px 8px 16px rgb(0 0 0 / 40%);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.my-card{
+  cursor: pointer;
+	width: auto;
+	max-width: 48%;
+	min-width: 31%;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 15px;
+	text-align: center;
+	position: relative;
+}
+
+.my-card-ribbon {
+	position: absolute;
+	top: 20px;
+	padding: 10px;
+	background-color: hsl(149deg 49% 42%);
+	color: white;
+}
+
+.my-card-img{
+  max-height: 100%;
+  width: auto;
+}
+/*
+				<div class="hover-popup">
+					<div class="hover-popup-title">C 501</div>
+					<div class="hover-popup-status-hr"></div>
+					<div class="hover-popup-status">
+						Solgt
+					</div>
+					<div class="hover-popup-body">
+						<strong>BRA m²:</strong>123,4<br>
+						<strong>Soverom:</strong>3<br>
+						<img class="hover-popup-image" src="/images/apartments/1631416883_7df9db847d64516d435a.png" alt="" crossorigin="anonymous">
+					</div>
+				</div>
+*/
