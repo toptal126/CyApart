@@ -21,11 +21,11 @@
 						<div class="sb-nav-link-icon"><i class="fas fa-eye"></i></div>
 						Preview
 					</a>
-					<a hidden class="nav-link" href="<?= base_url('objects'); ?>">
+					<a class="nav-link" href="<?= base_url('objects'); ?>">
 						<div class="sb-nav-link-icon"><i class="fas fa-server"></i></div>
 						Object Model
 					</a>
-					<a hidden> class="nav-link" href="<?= base_url('ajax-jquery'); ?>">
+					<a class="nav-link" href="<?= base_url('ajax-jquery'); ?>">
 						<div class="sb-nav-link-icon"><i class="fas fa-spinner"></i></div>
 						Ajax jQuery
 					</a>

@@ -203,15 +203,28 @@ class Apartment extends BaseController
 		}
 
 		session()->setFlashData("error", "Internal Server Error!");
-		return redirect()->to('apartments');		
+		return redirect()->to('apartments');	
 
+	}
+
+	public function delete($apartId='')
+	{
+		// code...
+		$apart = $this->apartmentModel->where('id', $apartId)->find();
+		if (!$apart){
+			session()->setFlashData("error", "Invalid Operation Detected!");
+			return redirect()->to('apartments');
+		}
+		$this->apartmentModel->where('id', $apartId)->delete();
+		return redirect()->to('apartments');
 	}
 
 	public function view_apartment($apartId = "")
 	{
 		$apart = $this->apartmentModel->where('apart_id', $apartId)->find();
 		if (!$apart){
-			return "false";
+			session()->setFlashData("error", "Invalid Operation Detected!");
+			return redirect()->to('apartments');
 		}
 
 		$data = [

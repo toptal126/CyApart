@@ -57,7 +57,7 @@
 					<button class="btn btn-lg btn-outline-primary" onclick="$('#filter_panel').toggle()"> <i class="fas fa-sliders-h"></i> Filter</button>
 				</div>
 			</div>
-			<div class="row" id="filter_panel" style="display:non">
+			<div class="row" id="filter_panel" style="display:none">
 				<div class="col-md-4 pl-5 pr-5">
 					<p class="text-center font-weight-bold mb-n1">Good Area</p>
 					<span id="good_sqm_slider_start"><?= $min_good_sqm ?></span>
@@ -93,6 +93,7 @@
 										<?=$apart['title']?>
 									</div>
 									<div class="hover-popup-body">
+										<?=$apart['status']?("<strong>Price:</strong>".$apart['price']."<br>"):'' ?>
 										<strong>BRA m²:</strong> <?=$apart['good_sqm']?><br>
 										<strong>Soverom:</strong> <?=$apart['bedroom']?><br>
 										<img class="hover-popup-image" src="/images/apartments/resized/preview-<?=$apart['image']?>" alt="" crossorigin="anonymous">

@@ -40,6 +40,7 @@ $routes->get('/perspective', 'Apartment::index');
 $routes->post('/upload_perspective', 'Apartment::upload_perspective');
 $routes->get('/apartments', 'Apartment::apartments');
 $routes->post('/apartment/save_details', 'Apartment::save_details');
+$routes->get('/apartment/delete/(:any)', 'Apartment::delete/$1');
 $routes->get('/preview', 'Apartment::preview');
 $routes->get('/view_apartment/(:any)', 'Apartment::view_apartment/$1');
 $routes->get('/view_apartment', 'Apartment::view_apartment');

@@ -1,0 +1,17 @@
+CRITICAL - 2021-09-13 07:11:22 --> Call to undefined function form_open()
+#0 F:\Projects\mobasher\ci4\system\View\View.php(214): include()
+#1 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('ajax/view_modal...', Array, true)
+#3 F:\Projects\mobasher\ci4\app\Controllers\Ajax.php(123): view('ajax/view_modal...', Array)
+#4 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Ajax->get_modal_edit()
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajax))
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-09-13 08:53:20 --> Undefined variable $t
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 219)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->delete('115')
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

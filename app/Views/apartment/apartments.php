@@ -99,7 +99,7 @@
 					<svg xmlns="http://www.w3.org/2000/svg" id="img_preview" style="background-image: url(/images/perspective/<?= $perspective['image'] ?>); background-size: cover;" width="100%"	viewBox="0 0 2427 1200">
 
 						<?php foreach ($apartments as $apart) {
-							echo '<path class="status-'. $apart['status'] . '" d="' . $apart['path'] . '" fill="#0000"  data-placement="right" data-toggle="tooltip" data-html="true" title=\' ' . 
+							echo '<path onclick="onClickPath(' . $apart['id'] . ')" class="status-'. $apart['status'] . '" d="' . $apart['path'] . '" fill="#0000"  data-placement="right" data-toggle="tooltip" data-html="true" title=\' ' . 
 								'<div class="hover-popup">
 									<div class="hover-popup-title">' . $apart['title'] . '</div>
 									<div class="hover-popup-status-hr hr-status-' . $apart['status'] . '"></div>
@@ -109,7 +109,7 @@
 									<div class="hover-popup-body">
 										<strong>BRA m²:</strong> ' . $apart['good_sqm'] . '<br>
 										<strong>Soverom:</strong> ' . $apart['bedroom'] . '<br>
-										<img class="hover-popup-image" src="/images/apartments/' . $apart['image'] . '" alt="" crossorigin="anonymous">
+										<img class="hover-popup-image" src="/images/apartments/resized/preview-' . $apart['image'] . '" alt="" crossorigin="anonymous">
 									</div>
 								</div>'
 							 . ' \'></path>';
@@ -199,5 +199,23 @@
 				return;	
 			}		
 		});
+
+		function onClickPath(apartId) {
+			// alert(apartId);
+			Swal.fire({
+			 title: 'Are you going to delete this data?',
+			 text: `You won't be able to revert this!`,
+			 icon: 'question',
+			 showCancelButton: true,
+			 confirmButtonColor: '#d33',
+			 cancelButtonColor: '#3085d6',
+			 confirmButtonText: 'Yes, delete it!',
+			 cancelButtonText: 'Cancel'
+		 }).then((result) => {
+			 if (result.value){
+			 	window.location.href = "apartment/delete/" + apartId;
+			 }
+		 });
+		}
 	</script>
 	<?= $this->endSection();
