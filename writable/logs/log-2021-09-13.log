@@ -15,3 +15,19 @@ CRITICAL - 2021-09-13 08:53:20 --> Undefined variable $t
 #3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2021-09-13 11:06:46 --> Attempt to read property "username" on null
+#0 F:\Projects\mobasher\ci4\app\Views\layout\sidebar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'F:\\Projects\\mob...', 40)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#4 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(39): CodeIgniter\View\View->include('layout/sidebar')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#6 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#8 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('apartment/persp...', Array, true)
+#9 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(30): view('apartment/persp...', Array)
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->index()
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}

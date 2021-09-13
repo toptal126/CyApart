@@ -16,14 +16,16 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	
 	<link href="/css/apartment.css" rel="stylesheet" />
 </head>
 
 <body class="sb-nav-fixed">
 	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-		<a class="navbar-brand" href="<?= base_url('dashboard'); ?>">CyApart</a>
+		<a class="navbar-brand" href="<?= base_url('dashboard'); ?>">Apart</a>
 
 		<ul class="navbar-nav d-md-inline-block	ml-auto mr-0 my-2 ">
 			<li class="nav-item dropdown">
@@ -39,10 +41,10 @@
 	<!-- Render section content -->
 	<div id="layoutSidenav_content" style="background-color: #d4e4d8;">
 	<main>
-		<div class="container-fluid pt-4">
+		<div class="container-fluid pt-5">
 
-			<h1 class="mt-5"><i class="fas fa-eye"></i> <?= $title; ?></h1>
-			<div class="row mb-3">
+			<h1 hidden class="mt-5"><i class="fas fa-eye"></i> <?= $title; ?></h1>
+			<div class="row mb-5 mt-3">
 				<div class="mt-auto mb-auto ml-3">
 					<b>Find your home</b>
 					<div>Available housing: 32</div>
@@ -53,11 +55,11 @@
 						<img style="border-radius: 10px;" width="120px" height="70px" src="/images/perspective/<?= $perspective['image'] ?>">
 					</div>
 				</div>
-				<div class="ml-auto mr-5	mt-auto mb-auto">
-					<button class="btn btn-lg btn-outline-primary" onclick="$('#filter_panel').toggle()"> <i class="fas fa-sliders-h"></i> Filter</button>
+				<div class="ml-auto mr-5 mt-auto mb-auto">
+					<button class="btn btn-lg btn-outline-primary " onclick="$('#filter_panel').toggle()"> <i class="fas fa-sliders-h"></i> Filter</button>
 				</div>
 			</div>
-			<div class="row" id="filter_panel" style="display:none">
+			<div class="row mb-5" id="filter_panel" style="display:none">
 				<div class="col-md-4 pl-5 pr-5">
 					<p class="text-center font-weight-bold mb-n1">Good Area</p>
 					<span id="good_sqm_slider_start"><?= $min_good_sqm ?></span>
@@ -80,9 +82,9 @@
 			<div class="row mt-3">
 				<div class="col-md-12">
 					<svg xmlns="http://www.w3.org/2000/svg" id="img_preview" style="background-image: url(/images/perspective/<?= $perspective['image'] ?>); background-size: cover;" width="100%"	viewBox="0 0 2427 1200">
-
+						<?php $no=0;?>
 						<?php foreach ($apartments as $apart): ?>
-							<path class="status-<?=$apart['status']?>" d="<?=$apart['path']?>" fill="#0000"	data-placement="right" onclick="gotoRoom('<?=$apart['apart_id']?>')" data-toggle="tooltip" data-html="true"
+							<path id="path-<?=$no ?>" class="status-<?=$apart['status']?> <?=$apart['status']?'lightning':''?>" d="<?=$apart['path']?>" fill="#0000"	data-placement="right" onclick="gotoRoom('<?=$apart['apart_id']?>', <?=$apart['status']?>, true, <?=$no++?>)" data-toggle="tooltip" data-html="true"
 								data-good_sqm="<?= $apart['good_sqm'] ?>"
 								data-price="<?= $apart['price'] ?>"
 								data-bedroom="<?= $apart['bedroom'] ?>"
@@ -90,7 +92,7 @@
 									<div class="hover-popup-title"><?=$apart['title']?></div>
 									<div class="hover-popup-status-hr hr-status-<?=$apart['status']?>"></div>
 									<div class="hover-popup-status-text text-status-<?=$apart['status']?>">
-										<?=$apart['title']?>
+										<?=$apart['status']?'Available':'Sold'?>
 									</div>
 									<div class="hover-popup-body">
 										<?=$apart['status']?("<strong>Price:</strong>".$apart['price']."<br>"):'' ?>
@@ -103,6 +105,32 @@
 						<?php endforeach;?>
 					</svg>
 				</div>
+				<div class="col-md-12 d-md-none" id="slick_panel"> <!--	 -->
+					<button type="button" class="btn btn-primary btn-circle slide-prev-btn"><i class="fas fa-angle-left"></i></button>
+					<button type="button" class="btn btn-primary btn-circle slide-next-btn"><i class="fas fa-angle-right"></i></button>
+
+					<div id="slickSlide">
+						<?php foreach ($availableApartments as $apart) : ?>
+							<div class="hover-slide" onclick="gotoRoom('<?= $apart['apart_id'] ?>')">
+								<div class="hover-slide-title"><?=$apart['title']?></div>
+								<div class="hover-slide-status-hr hr-status-<?=$apart['status']?>"></div>
+								<div class="hover-slide-status-text text-status-<?=$apart['status']?>">
+									<?=$apart['status']?'Available':'Sold'?>
+								</div>
+								<div class="hover-slide-body d-flex flex-column flex-sm-row">
+									<div class="mt-auto mb-auto">
+										<?=$apart['status']?("<strong>Price:</strong>".$apart['price']."<br>"):'' ?>
+										<strong>BRA m²:</strong> <?=$apart['good_sqm']?><br>
+										<strong>Soverom:</strong> <?=$apart['bedroom']?><br>
+									</div>
+									<div style="flex-grow: 2; text-align: center;">
+										<img class="hover-slide-image" src="/images/apartments/resized/preview-<?=$apart['image']?>">
+									</div>
+								</div>
+							</div>
+						<?php endforeach; ?>
+					</div>
+				</div>
 				<div class="col-md-12 pt-3 pb-3 pr-5">
 					<button type="button" id="view_image_btn" class="btn btn-outline-primary float-right" onclick="toggleCard(1)"><i class="fas fa-th"></i> Image</button>
 					<button type="button" id="view_price_btn" class="btn btn-primary float-right mr-3" onclick="toggleCard(0)"><i class="fas fa-list"></i> Price</button>
@@ -110,7 +138,7 @@
 
 				<div class="col-md-12 pl-5 pr-5" id="price_panel">
 					<div class="table-responsive">
-						<table class="table table-striped" id="apartTable" width="100%" cellspacing="0">
+						<table style="cursor: pointer;" class="table-hover table table-striped" id="apartTable" width="100%" cellspacing="0">
 							<thead class="thead-dark">
 								<tr>
 									<!-- Status	Price	Bedroom	BRA m²	P-Rom m²	Balkong m²	Terrace area m²	Story	Floors	Apartment ID -->
@@ -129,7 +157,7 @@
 							<tbody>
 								<?php $no = 1;
 								foreach ($availableApartments as $apart) : ?>
-									<tr>
+									<tr onclick="gotoRoom('<?= $apart['apart_id'] ?>')">
 										<td><?= $apart['status']==1?'Available':'Sold' ?></td>
 										<td><?= $apart['price']?></td>
 										<td><?= $apart['bedroom']?></td>
@@ -174,7 +202,23 @@
 		}
 
 		$(document).ready(function() {
+			$('#slickSlide').slick({
+				infinite: false,
+				waitForAnimate: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: $('.slide-prev-btn'),
+				nextArrow: $('.slide-next-btn')
+			});
+
+			$('#slickSlide').on('afterChange', function(event, slick, currentSlide){
+				$('.mobile-hover').removeClass("mobile-hover");
+				$("#path-" + currentSlide).addClass("mobile-hover");
+			});
+
 			$(function () {
+				if ($("#slick_panel").css("display") == "block")
+					return;
 				$('[data-toggle="tooltip"]').tooltip()
 			});
 			$("#apartTable").dataTable({
@@ -327,7 +371,17 @@
 			}
 		}
 
-		function gotoRoom(apartId) {
+		function gotoRoom(apartId, status, onPath, page) {
+			if (onPath){
+				if ($("#slick_panel").css("display") == "block") //if it's mobile
+				{
+					if (status){
+						$('.mobile-hover').removeClass("mobile-hover");
+						$('#slickSlide').slick('slickGoTo', page, false)
+					}
+					return;
+				}
+			}
 			window.location.href = '/view_apartment/' + apartId;
 		}
 
@@ -340,6 +394,7 @@
 			const max_bedroom = $("#bedroom_slider_end").html();
 
 			$('#img_preview').children('path').each(function () {
+				$(this).removeClass('lightning');
 				$(this).removeClass('filter-decline');
 				$(this).removeClass('filter-accept');
 				const good_sqm = $(this).data('good_sqm');
@@ -365,7 +420,7 @@
 	<!-- Footer -->
 	<footer class="py-4 bg-light mt-auto">
 		<div class="container-fluid">
-			CyApart Written By Top Talent 126
+			Apart Written By Top Talent 126
 		</div>
 	</footer>
 	</div>

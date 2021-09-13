@@ -70,7 +70,7 @@ class Apartment extends BaseController
 
 		$data = [
 			'title' => 'Apartment Settings',
-			'perspective' => $this->perspectiveModel->findAll()[0],
+			'perspective' => $this->perspectiveModel->orderBy('id', 'desc')->findAll()[0],
 			'apartments' => $this->apartmentModel->findAll(),
 			'statusColor' => $this->statusColor
 		];
@@ -125,8 +125,8 @@ class Apartment extends BaseController
 
 		$data = [
 			'title' => 'Preview Apartments',
-			'perspective' => $this->perspectiveModel->findAll()[0],
-			'apartments' => $this->apartmentModel->findAll(),
+			'perspective' => $this->perspectiveModel->orderBy('id', 'desc')->findAll()[0],
+			'apartments' => $this->apartmentModel->findAll(),  //->orderBy('status', 'desc')
 			'availableApartments' => $this->apartmentModel->where('status', 1)->findAll(),
 			'soldApartments' => $this->apartmentModel->where('status', 0)->findAll(),
 			'statusColor' => $this->statusColor,
@@ -228,7 +228,7 @@ class Apartment extends BaseController
 		}
 
 		$data = [
-			'perspective' => $this->perspectiveModel->findAll()[0],
+			'perspective' => $this->perspectiveModel->orderBy('id', 'desc')->findAll()[0],
 			'title' => 'View Apartment',
 			'apart' => $apart[0],
 		];

@@ -1,5 +1,5 @@
 #img_preview path{
-  cursor: pointer;
+	cursor: pointer;
 }
 #img_preview .status-0{
 	fill: #f2383866;
@@ -7,26 +7,54 @@
 #img_preview .status-0:hover{
 	fill: #f2383899;
 }
+
+#img_preview .mobile-hover{
+	fill: #42a48799 !important;
+}
+#img_preview .status-1.lightning{
+	-webkit-animation:lightning;
+	animation:lightning;
+	-webkit-animation-duration:2s;
+	animation-duration:2s;
+	-webkit-animation-timing-function:ease-in-out;
+	animation-timing-function:ease-in-out;
+	-webkit-animation-iteration-count:infinite;
+	animation-iteration-count:infinite
+}
+@-webkit-keyframes lightning{
+	0%{fill:hsla(0,0%,100%,0)}
+	50%{fill:hsla(0,0%,100%,0)}
+	70%{fill:hsla(0,0%,100%,.2)}
+	to{fill:hsla(0,0%,100%,0)}
+}
+@keyframes lightning{
+	0%{fill:hsla(0,0%,100%,0)}
+	50%{fill:hsla(0,0%,100%,0)}
+	70%{fill:hsla(0,0%,100%,.2)}
+	to{fill:hsla(0,0%,100%,0)}
+}
+
+
 #img_preview .status-1:hover{
-	fill: #42a48799;
+	fill: #42a48799 !important;
 }
 #img_preview .filter-accept.status-1{
-  fill: #42a48766;
+	fill: #42a48766;
 }
 #img_preview .filter-accept.status-0{
-  fill: #f2383866;
+	fill: #f2383866;
 }
 #img_preview .filter-accept.status-1:hover{
-  fill: #42a48799;
+	fill: #42a48799;
 }
 #img_preview .filter-accept.status-0:hover{
-  fill: #f2383899;
+	fill: #f2383899;
 }
 #img_preview .filter-decline{
-  fill: #80808066;
+	fill: #80808066;
 }
 #img_preview .filter-decline:hover{
-  fill: #80808099;
+	fill: #80808099;
 }
 .tooltip-inner{
 	padding: 0px !important;
@@ -60,26 +88,14 @@
 	width: 100%;
 	height: 3px;
 }
-.hr-status-0{
-	background-color: #bb252e;
-}
-.hr-status-1{
-	background-color: #369e69;
-}
 .hover-popup-status-text{
 	color: white;
 	margin-top: -15px;
-	width: 60px;
+	width: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 5px;
 	padding-right: 5px;
-}
-.text-status-0{
-	background-color: #bb252e;
-}
-.text-status-1{
-	background-color: #369e69;
 }
 .hover-popup-body{
 	padding: 10px 15px 20px;
@@ -89,14 +105,94 @@
 	width: 100%
 }
 
+.btn-circle {
+	width: 50px;
+	height: 50px;
+	padding: 6px 0px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.42857;
+}
+.slide-prev-btn{
+	position: absolute;
+	top: 50%;
+	z-index: 9;
+}
+.slide-next-btn{
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	z-index: 9;
+}
+.hover-slide{
+	background: #fff;
+	color: #2e363d;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	box-shadow: 3px 3px 6px rgb(0 0 0 / 40%);
+}
+.hover-slide-title{
+	background: #eee;
+	color: #000;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	padding: 12px 20px 13px;
+	border-radius: 8px 8px 0 0;
+}
+.hover-slide-status-hr{
+	width: 100%;
+	height: 3px;
+}
+.hover-slide-status-text{
+	color: white;
+	margin-top: -15px;
+	width: 90px;
+	margin-left: auto;
+	margin-right: 20px;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.hover-slide-body{
+	padding: 7px 50px 25px;
+	text-align: left;
+}
+.hover-slide-image{
+	height: 160px;
+	display: inline !important;
+}
+.hr-status-0{
+	background-color: #bb252e;
+}
+.hr-status-1{
+	background-color: #369e69;
+}
+.text-status-0{
+	background-color: #bb252e;
+}
+.text-status-1{
+	background-color: #369e69;
+}
+#apartTable{
+	font-size: 18px;
+
+}
+#apartTable tr:hover {
+	box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+}
+
 .my-card:hover{
-  box-shadow: 8px 8px 16px rgb(0 0 0 / 40%);
-  transform: scale(1.02);
-  transition: 0.3s;
+	box-shadow: 8px 8px 16px rgb(0 0 0 / 40%);
+	transform: scale(1.02);
+	transition: 0.3s;
 }
 
 .my-card{
-  cursor: pointer;
+	cursor: pointer;
 	width: auto;
 	max-width: 48%;
 	min-width: 31%;
@@ -106,7 +202,10 @@
 	text-align: center;
 	position: relative;
 }
-
+@media (max-width: 768px){
+.my-card {
+  min-width: 48%;
+}}
 .my-card-ribbon {
 	position: absolute;
 	top: 20px;
@@ -116,8 +215,8 @@
 }
 
 .my-card-img{
-  max-height: 100%;
-  width: auto;
+	max-height: 100%;
+	width: auto;
 }
 /*
 				<div class="hover-popup">
@@ -132,4 +231,5 @@
 						<img class="hover-popup-image" src="/images/apartments/1631416883_7df9db847d64516d435a.png" alt="" crossorigin="anonymous">
 					</div>
 				</div>
-*/
+				*/
+
