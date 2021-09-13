@@ -201,6 +201,8 @@
 		});
 
 		function onClickPath(apartId) {
+			if (isPathDrawing)
+				return;
 			// alert(apartId);
 			Swal.fire({
 			 title: 'Are you going to delete this data?',

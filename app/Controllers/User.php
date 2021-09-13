@@ -26,10 +26,7 @@ class User extends BaseController
 	}
 	public function login()
 	{
-		$error = $this->session->getFlashdata('error');
-		if (!$error)
-			$error = ["message" => ""];
-		return view('auth/login', $error);
+		return view('auth/login');
 	}
 	public function check_login(){
 		$email = $this->request->getPost("email");
@@ -37,7 +34,7 @@ class User extends BaseController
 
 		$result = $this->userModel->attemptLogin($email, $password);
 		if ($result['type'] == 0){
-			$this->session->setFlashdata('error', $result);
+			$this->session->setFlashdata('error', $result['message']);
 			return redirect()->back();
 		}
 

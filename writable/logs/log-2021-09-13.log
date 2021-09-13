@@ -31,3 +31,63 @@ CRITICAL - 2021-09-13 11:06:46 --> Attempt to read property "username" on null
 #12 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #13 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #14 {main}
+CRITICAL - 2021-09-13 16:20:36 --> Call to a member function where() on null
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->preview()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-13 16:32:26 --> Cannot use object of type stdClass as array
+#0 F:\Projects\mobasher\ci4\system\View\View.php(214): include()
+#1 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#3 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(39): CodeIgniter\View\View->include('layout/sidebar')
+#4 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#7 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#8 F:\Projects\mobasher\ci4\app\Controllers\Dashboard.php(23): view('dashboard/index', Array)
+#9 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Dashboard->index()
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-09-13 16:32:35 --> Cannot use object of type stdClass as array
+#0 F:\Projects\mobasher\ci4\system\View\View.php(214): include()
+#1 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 F:\Projects\mobasher\ci4\system\View\View.php(432): CodeIgniter\View\View->render('layout/sidebar', NULL, true)
+#3 F:\Projects\mobasher\ci4\app\Views\layout\templates.php(39): CodeIgniter\View\View->include('layout/sidebar')
+#4 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#5 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 F:\Projects\mobasher\ci4\system\View\View.php(230): CodeIgniter\View\View->render('layout/template...', Array, true)
+#7 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#8 F:\Projects\mobasher\ci4\app\Controllers\Dashboard.php(23): view('dashboard/index', Array)
+#9 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Dashboard->index()
+#10 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-09-13 16:37:54 --> Object of type CodeIgniter\HTTP\RedirectResponse is not callable
+#0 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->index()
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-09-13 16:39:01 --> Undefined variable $vaild
+#0 F:\Projects\mobasher\ci4\app\Controllers\Apartment.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'F:\\Projects\\mob...', 36)
+#1 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\Apartment->index()
+#2 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apartment))
+#3 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-09-13 16:42:19 --> Array to string conversion
+#0 F:\Projects\mobasher\ci4\app\Views\auth\login.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'F:\\Projects\\mob...', 65)
+#1 F:\Projects\mobasher\ci4\system\View\View.php(214): include('F:\\Projects\\mob...')
+#2 F:\Projects\mobasher\ci4\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\Projects\mobasher\ci4\system\Common.php(1092): CodeIgniter\View\View->render('auth/login', Array, true)
+#4 F:\Projects\mobasher\ci4\app\Controllers\User.php(29): view('auth/login')
+#5 F:\Projects\mobasher\ci4\system\CodeIgniter.php(802): App\Controllers\User->login()
+#6 F:\Projects\mobasher\ci4\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 F:\Projects\mobasher\ci4\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Projects\mobasher\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

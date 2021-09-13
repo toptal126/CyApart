@@ -62,9 +62,9 @@ body {
 <body>
 	<form class="form-signin" action="/login" method="post">
 		<h1 class="h3 mb-3 font-weight-normal text-white">Please sign in </h1>
-		<h4 class="text-danger"><?= $message ?></h4>
+		<h4 class="text-danger"><?= session()->getFlashdata('error') ?></h4>
 		<label for="inputEmail" class="sr-only">Email address</label>
-		<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
 		<label for="inputPassword" class="sr-only">Password</label>
 		<input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 		<div class="checkbox mb-3 text-white">

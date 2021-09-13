@@ -8,6 +8,7 @@
 						<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
 						Dashboard
 					</a>
+					<?php if(session()->get('user')->active):?>
 					<div class="sb-sidenav-menu-heading">System Settings</div>
 					<a class="nav-link" href="<?= base_url('perspective'); ?>">
 						<div class="sb-nav-link-icon"><i class="fas fa-image"></i></div>
@@ -17,6 +18,8 @@
 						<div class="sb-nav-link-icon"><i class="fas fa-city"></i></div>
 						Apartments
 					</a>
+					<?php endif;?>
+					<div class="sb-sidenav-menu-heading">Client Part</div>
 					<a class="nav-link" href="<?= base_url('preview'); ?>">
 						<div class="sb-nav-link-icon"><i class="fas fa-eye"></i></div>
 						Preview

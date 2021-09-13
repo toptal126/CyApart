@@ -19,9 +19,24 @@ class Apartment extends BaseController
 		$this->statusColor = [ '#f2383866', '#42a48799'];
 		helper('form');		
 	}
-
+	public function checkAuth($requireAdmin = true){
+		if (!session()->get('user')){
+			session()->setFlashData("error", "Login First!");
+			return "login";
+		}
+		if ($requireAdmin){
+			if (!session()->get('user')->active){
+				session()->setFlashData("error", "Illegal Action!");
+				return "logout";
+			}
+		}
+	}
 	public function index()
 	{
+		$valid = $this->checkAuth();
+		if ($valid)
+		 return redirect()->to($valid);
+		// return "asdf";
 		$data = [
 			'title' => 'Upload Perspective Image',
 			'all_data' => $this->perspectiveModel->findAll()
@@ -31,6 +46,12 @@ class Apartment extends BaseController
 	}
 
 	public function upload_perspective(){
+		$valid = $this->checkAuth();
+		if ($valid)
+		 return redirect()->to($valid);
+		if (!session()->get('user')){
+			return redirect()->to("/login");
+		}
 		$image = $this->request->getFile('photo');
 		$imageName = $image->getRandomName();
 
@@ -63,11 +84,12 @@ class Apartment extends BaseController
 	}
 
 	public function apartments(){
-
+		$valid = $this->checkAuth();
+		if ($valid)
+		 return redirect()->to($valid);
 		if (!session()->get('user')){
 			return redirect()->to("/login");
 		}
-
 		$data = [
 			'title' => 'Apartment Settings',
 			'perspective' => $this->perspectiveModel->orderBy('id', 'desc')->findAll()[0],
@@ -79,6 +101,9 @@ class Apartment extends BaseController
 		return view("apartment/apartments", $data);
 	}
 	public function preview(){
+		$valid = $this->checkAuth(false);
+		if ($valid)
+		 return redirect()->to($valid);
 		/*
 		$apartments = $this->apartmentModel->where('status', 0)->findAll();
 		foreach($apartments as $apart){
@@ -99,11 +124,9 @@ class Apartment extends BaseController
 		}
 		*/
 
-
 		if (!session()->get('user')){
 			return redirect()->to("/login");
 		}
-
 		$min_good_sqm = $this->apartmentModel->where('status', 1)
 			->orderBy('good_sqm', 'asc')
 			->find()[0]['good_sqm'];
@@ -144,6 +167,12 @@ class Apartment extends BaseController
 
 	public function save_details()
 	{
+		$valid = $this->checkAuth();
+		if ($valid)
+		 return redirect()->to($valid);
+		if (!session()->get('user')){
+			return redirect()->to("/login");
+		}
 		$image = $this->request->getFile('image');
 		$imageName = $image->getRandomName();
 
@@ -209,6 +238,12 @@ class Apartment extends BaseController
 
 	public function delete($apartId='')
 	{
+		$valid = $this->checkAuth();
+		if ($valid)
+		 return redirect()->to($valid);
+		if (!session()->get('user')){
+			return redirect()->to("/login");
+		}
 		// code...
 		$apart = $this->apartmentModel->where('id', $apartId)->find();
 		if (!$apart){
@@ -221,6 +256,9 @@ class Apartment extends BaseController
 
 	public function view_apartment($apartId = "")
 	{
+		$valid = $this->checkAuth(false);
+		if ($valid)
+		 return redirect()->to($valid);
 		$apart = $this->apartmentModel->where('apart_id', $apartId)->find();
 		if (!$apart){
 			session()->setFlashData("error", "Invalid Operation Detected!");
